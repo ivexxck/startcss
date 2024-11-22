@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+body {
+    font-family: "Poppins";
+    margin: 0 auto;
+    & section {
+        margin-bottom: 30px;
+    }
+}
+
+/*parte header*/
+
+header {
+    background-color: rgb(19, 19, 81);
+    height: 100%;
+}
+
+.header {
+    display: flex;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.links {
+    display: flex;
+    gap: 60px;
+        & a {
+            text-decoration: none;
+            color: white;
+        }
+}
+
+.general-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+        
+}
+
+/*parte roja*/
+
+
+.above-part {
+    background-color: rgb(232, 69, 69);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-part {
+    width: 150px;
+}
+
+.textAbove {
+    text-align: center;
+    color: white;
+}
+
+/*portofolio*/
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        & img {
+            width: 250px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+}
+
+.titre-portfolio {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/*parte about*/
+
+#about {
+    background-color: rgb(232, 69, 69);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.text-about {
+    display: flex;
+    width: 50%;
+    gap: 50px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.titre-about {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+
+/*parte contact*/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 40%;
+    & #button {
+        width: 15%;
+        background-color: rgb(232, 69, 69);
+        height: 45px;
+        border-radius: 5px;
+        color: white;
+    }
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 50px;
+    width: 100%;
+    border: none;
+    border-bottom: rgba(179, 179, 179, 0.689) solid 1px;
+    font-family: "Poppins";
+    outline: none;
+}
+
+.titre-contact {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/*parte footer*/
+
+.above-side-footer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    background-color: rgb(19, 19, 81);
+    height: 300px;
+    color: white;
+    & p {
+        font-size: 15px;
+        margin: 0;
+    }
+    & .blue-line {
+        color: rgb(51, 186, 143);
+    }
+    & img {
+        width: 50px;
+        margin-right: 20px;
+    }
+}
+
+.titre-footer {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.copyright {
+    background-color:rgb(16, 16, 41);
+    height: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+
+/*responsive*/
+
+/*teléfono*/
+@media (max-width: 576px) {
+    body {
+        margin: 0;
+        & section {
+        margin-bottom: 10px;
+        font-size: small;
+        }
+    }
+    .links {
+        font-size: small;
+        gap: 30px;
+    }
+
+    .general-header {
+        gap: 20px;
+    }
+
+    .above-part {
+        height: 300px;
+    }    
+
+    .img-part {
+        width: 120px;
+    }
+
+    .textAbove {
+        line-height: 0.5;
+    }
+
+    .portfolio-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            & img {
+                width: 150px;
+                border-radius: 5px;
+                margin: 5px;
+            }
+    }
+
+    .titre-portfolio {
+        font-size: 1.2rem;
+    }
+
+    .text-about {
+        width: 80%;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .titre-about {
+        font-size: 1.2rem;
+    }
+
+    form {
+        width: 40%;
+        & #button {
+            width: 30%;
+        }
+    }
+
+    .titre-contact {
+        font-size: 1.2rem;
+    }
+    
+    .above-side-footer {
+        gap: 5%;
+        background-color: rgb(19, 19, 81);
+        height: 150px;
+        color: white;
+        & p {
+            font-size: 12px;
+            margin: 0;
+        }
+        & .blue-line {
+            color: rgb(51, 186, 143);
+        }
+        & img {
+            width: 30px;
+            margin-right: 5px;
+        }
+    }
+
+    .titre-footer {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+}
+
+/*tablet*/
+
+@media (min-width: 576px) and (max-width:768) {
+    body {
+        margin: 0;
+        & section {
+        margin-bottom: 10px;
+        font-size: small;
+        }
+    }
+    .links {
+        font-size: small;
+        gap: 30px;
+    }
+
+    .general-header {
+        gap: 20px;
+    }
+
+    .above-part {
+        height: 300px;
+    }    
+
+    .img-part {
+        width: 120px;
+    }
+
+    .textAbove {
+        line-height: 0.5;
+    }
+
+    .portfolio-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            & img {
+                width: 50px;
+                border-radius: 5px;
+                margin: 5px;
+            }
+    }
+
+    .titre-portfolio {
+        font-size: 1.2rem;
+    }
+
+    .text-about {
+        width: 80%;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .titre-about {
+        font-size: 1.2rem;
+    }
+
+    form {
+        width: 40%;
+        & #button {
+            width: 30%;
+        }
+    }
+
+    .titre-contact {
+        font-size: 1.2rem;
+    }
+    
+    .above-side-footer {
+        gap: 5%;
+        background-color: rgb(19, 19, 81);
+        height: 150px;
+        color: white;
+        & p {
+            font-size: 12px;
+            margin: 0;
+        }
+        & .blue-line {
+            color: rgb(51, 186, 143);
+        }
+        & img {
+            width: 30px;
+            margin-right: 5px;
+        }
+    }
+
+    .titre-footer {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .copyright {
+        font-size: 10px;
+    }
+
+}
+
+
+
